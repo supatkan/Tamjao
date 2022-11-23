@@ -43,10 +43,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body class="background-all text-warning">
-    <?php include 'menu_no_user.php.php'; ?>
+    <?php include 'menu_no_user.php'; ?>
     <div class="container">
-        <br />
-        <img src=image/front_cover.png width=100%>
         <br>
         <br>
         <div align = "center">
