@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         session_regenerate_id();
         $_SESSION['login_user'] = $myusername;
        
-        header("location: AllPlayyerForAdmin");
+        header("location: #");
     }else {
         echo '<script type ="text/JavaScript">';
         echo 'alert("Username หรือ Password กรอกผิด กรุณากรอกใหม่")';
