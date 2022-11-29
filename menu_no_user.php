@@ -30,12 +30,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="login">
                             เข้าสู่ระบบ
                         </a>
                     </li>    
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="register">
                             สมัครสมาชิก
                         </a>
                     </li>      
