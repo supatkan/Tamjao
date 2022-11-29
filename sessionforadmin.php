@@ -2,7 +2,7 @@
    include('connect_sever.php');
    session_start();
    
-   $user_check = $_SESSION['login_user'];
+   $user_check = $_SESSION['login_admin'];
    
    $ses_sql = mysqli_query($db,"select 'user_username' from 'user' where 'user_username' = '$user_check'");
    
@@ -10,7 +10,7 @@
    
    $login_session = $row['user_username'];
    
-   if(!isset($_SESSION['login_user'])){
+   if(!isset($_SESSION['login_admin'])){
       header("location:login");
       die();
    }

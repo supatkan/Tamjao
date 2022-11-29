@@ -10,25 +10,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = hash('sha1', $_POST['password']);
     $mypassword = mysqli_real_escape_string($db,$password); 
     
-    $sql = "SELECT `ID_user` FROM `user` WHERE `user_username` = '$myusername' and `user_password` = '$mypassword'";
+    $sql = "SELECT `ID_user`,`user_status` FROM `user` WHERE `user_username` = '$myusername' and `user_password` = '$mypassword'";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
-    
     $count = mysqli_num_rows($result);
-    
+    $checkstatus = $row['user_status'];
+
     // If result matched $myusername and $mypassword, table row must be 1 row
-      
+
     if($count == 1) {
-        session_regenerate_id();
-        $_SESSION['login_user'] = $myusername;
+        if($checkstatus=="user"){
+            session_regenerate_id();
+            $_SESSION['login_user'] = $myusername;
+           
+            header("location: mainforuser");
+        }else{
+            session_regenerate_id();
+            $_SESSION['login_admin'] = $myusername;
        
-        header("location: #");
+            header("location: mainforadmin");
+        }
+        
     }else {
         echo '<script type ="text/JavaScript">';
         echo 'alert("Username หรือ Password กรอกผิด กรุณากรอกใหม่")';
         echo '</script>';
     }
+
 }
 
 ?>
