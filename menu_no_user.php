@@ -25,7 +25,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="ranking">
                             จัดอันดับ
                         </a>
                     </li>
