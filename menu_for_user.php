@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="account_setting">
                             ตั้งค่า
                         </a>
                     </li>   

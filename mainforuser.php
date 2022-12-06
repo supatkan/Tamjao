@@ -1,6 +1,7 @@
 <?php
 include 'connect_server.php';
 include('session.php');
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
