@@ -1,6 +1,7 @@
 <?php
 include 'connect_server.php';
 include('sessionforadmin.php');
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,7 @@ include('sessionforadmin.php');
     <br>
     <div>
         <h2><b>ForAdmin</b></h2>
+        user คือ <?php echo "$set_user_login"; ?><br>
         <br>
     </div>
 </body>

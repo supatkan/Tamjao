@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="account_setting_for_admin">
                             ตั้งค่า
                         </a>
                     </li>   

@@ -15,4 +15,9 @@
       die();
    }
 
+   $sql = "SELECT * from `user` WHERE user_username='$user_check'";
+   $result = $conn->query($sql);
+   $row_for_eho = mysqli_fetch_array($result);
+   $set_user_login = $row_for_eho['user_username'];
+
 ?>
