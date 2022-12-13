@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">
+                        <a class="nav-link text-warning" href="AllUserForAdmin">
                             ข้อมูลผู้ใช้
                         </a>
                     </li>

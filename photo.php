@@ -67,7 +67,7 @@ include 'connect_server.php';
             <img class="img_up" src=image/avatar/person/women.png>
             <img class="img_up" src=image/avatar/costume/ct_women_<?= $row['user_Level_costume'] ?>.png>
             <?php    if($row['user_Level_weapon']>0){?>
-                <img class="img_up" src=image/avatar/weapon/wp_women_c<?= $row['user_Level_weapon'] ?>_w<?= $row['LV_weapon'] ?>.png>            
+                <img class="img_up" src=image/avatar/weapon/wp_women_c<?= $row['user_Level_weapon'] ?>_w<?= $row['user_Level_weapon'] ?>.png>            
             <?php }
                 if($row['user_Level_ring']>0){?>
             <img class="img_up" src=image/avatar/ring/r_women_<?= $row['user_Level_ring'] ?>.png>
